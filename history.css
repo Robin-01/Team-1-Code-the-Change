@@ -4,6 +4,7 @@
 }
 
 .navbar {
+    font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     padding: 10px 20px; /* Added horizontal padding */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -164,7 +165,8 @@ li {
 }
 
 .footer {
-    background-color: #f0f0f0;
+    background-color: #93B7F0;
+    font-family: Arial, sans-serif;
     padding: 20px;
     display: flex;
     justify-content: space-between;
