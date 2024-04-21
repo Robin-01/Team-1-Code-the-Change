@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Page</title>
+    <link rel="stylesheet" href="donation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo-link">
+            <img src="/Users/robin/Desktop/Code the Change/Pictures/Logo.png" alt="Logo" class="navbar-logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#credentials">Credentials</a></li>
+            <li><a href="#more">More</a></li>
+            <li><button onclick="location.href='#donate'">Donate</button></li>
+        </ul>
+    </nav>
+
+    <div class="background-image">
+        <div class="form-container">
+            <h1>Make a Donation</h1>
+            <form action="#" method="post">
+                <div class="row">
+                    <div class="input-container half-width">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first_name" placeholder="First Name" required>
+                    </div>
+                    <div class="input-container half-width">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last_name" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-container full-width">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    </div>
+                </div>
+                <div class="payment-options">
+                    <label>Payment Options</label>
+                    <div class="icons">
+                        <a href="https://www.paypal.com" target="_blank"><i class="fab fa-paypal fa-2x"></i></a>
+                        <a href="https://visa.com" target="_blank"><i class="fab fa-cc-visa fa-2x"></i></a>
+                        <a href="https://www.mastercard.com" target="_blank"><i class="fab fa-cc-mastercard fa-2x"></i></a>
+                    </div>
+                </div>
+                <button type="submit">Donate</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="/Users/robin/Desktop/Code the Change/Pictures/Logo.png" alt="Footer Logo">
+        </div>
+        <div class="footer-columns">
+            <div class="footer-column footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#more">More</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/sisilain.ibukota?igsh=MWQ1ZGUxMzBkMA=="><i class="fab fa-instagram"></i> @sisilain.ibukota</a></li>
+                    <li><i class="fas fa-phone"></i> Phone: +62 819-7678-989</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Address: 1234 Street Rd, City, Indonesia</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-donate">
+            <button onclick="location.href='#donate'">Donate Now</button>
+        </div>
+    </footer>
+</body>
+</html>
