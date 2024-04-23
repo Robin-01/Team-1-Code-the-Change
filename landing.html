@@ -9,39 +9,74 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href = "#" class = "logo">Logo</a>
-
-        <nav class = "navbar">
-            <a href = "#">About Us</a>
-            <a href = "#">History</a>
-            <a href = "#">Credentials</a>
-            <a href = "#">More</a>
-            <button><a href = "#">Donate</a></button>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <a href="#" class="logo-link">
+            <img src="/Users/robin/Desktop/Code the Change/Pictures/Logo.png" alt="Logo" class="navbar-logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#credentials">Credentials</a></li>
+            <li><a href="#more">More</a></li>
+            <li><button onclick="location.href='#donate'">Donate</button></li>
+        </ul>
+    </nav>
 
     <div class = "firstText">
-        <h1>Support What We Do</h1>
+        <h1 class="firstText-title">Support What We Do</h1>
+    </div>
+    <!--<img src="/Users/robin/Desktop/Code the Change/Pictures/donation.jpeg" alt="Main Image">-->
+    </div>
     </div> 
 
-    <div class = "row">
-        <div class = "column">
-          <img src = "img.jpg" alt = "Sisi lain" style = "width:100%">
+    <div class="header-descrpiton">
+        <div class="header-descrpiton-column descrpiton-column1">
+            <div class="header-descrpiton-column-text">
+                <h3>Care Package</h3>
+                <p>Include essential food items
+                    such as rice, sugar, cereals,
+                    and biscuits.</p>
+                    <div class="column">
+                        <!--<img src="Pictures/Care_Package.jpeg" alt="Image 1">-->
+                    </div>
+            </div>
         </div>
-        <div class="column">
-          <img src = "img.jpg" alt = "Sisi lain" style = "width:100%">
+        <div class="header-descrpiton-column descrpiton-column2">
+            <div class="header-descrpiton-column-text">
+                <h3>Community
+                    Engagement</h3>
+                <p>Inviting the public to contribute through donations or direct participation in our outreach
+                    activities</p>
+                    <div class="column">
+                        <!--<img src="Pictures/Excavater.jpeg" alt="Image 2">-->
+                    </div>
+            </div>
         </div>
-        <div class = "column">
-          <img src = "img.jpg" alt = "Sisi lain" style = "width:100%">
+        <div class="header-descrpiton-column descrpiton-column3">
+            <div class="header-descrpiton-column-text">
+                <h3>Support
+                    Local Vendors</h3>
+                <p>By purchasing our food and redistributing it to those in need.</p>
+                <div class="column">
+                    <!--<img src="Pictures/Supply_Load.jpeg" alt="Image 4">-->
+                </div>
+            </div>    
         </div>
-        <div class = "column">
-            <img src = "img.jpg" alt = "Sisi lain" style = "width: 100%">
+        <div class="header-descrpiton-column descrpiton-column4">
+            <div class="header-descrpiton-column-text">
+                <h3>Donation of Goods</h3>
+                <p>Giving items ranging from clothes to toys a second life while assisting those in need. </p>
+                <div class="column">
+                    <!--<img src="Pictures/Donation.jpeg" alt="Image 3">-->
+                </div>
+            </div>
         </div>
-      </div>
-      
-    <div class = "aboutUs">
+    </div>
+    
+    <div class="aboutUs-title">
         <h2>About Us</h2>
+    </div>
+    <div class = "aboutUs">
         <p>Sisilain Ibukota is a compassionate non-profit organization dedicated to supporting
            the marginalized neighborhoods on the outskirts of the capital city, Jakarta, where poverty
            casts a long shadow over the lives of its residents. Our core mission is to spread hope and love
@@ -54,14 +89,32 @@
            embrace all individuals with open arms and warm hearts, making a difference one care package at a time.</p>
     </div>
 
-    <div class = "footer">
-        <div class = "socialIcons">
-            <a href = ""><i class = "fa-brands fa-instagram"></i></a>
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="/Users/robin/Desktop/Code the Change/Pictures/Logo.png" alt="Footer Logo">
         </div>
-        <div class = "footerNav">
-            <li><a href = "">Home</a></li>
+        <div class="footer-columns">
+            <div class="footer-column footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#more">More</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/sisilain.ibukota?igsh=MWQ1ZGUxMzBkMA=="><i class="fab fa-instagram"></i> @sisilain.ibukota</a></li>
+                    <li><i class="fas fa-phone"></i> Phone: +62 819-7678-989</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Address: 1234 Street Rd, City, Indonesia</li>
+                </ul>
+            </div>
         </div>
-    </div>
+        <div class="footer-donate">
+            <button onclick="location.href='#donate'">Donate Now</button>
+        </div>
+    </footer>
     
 </body>
 </html>
