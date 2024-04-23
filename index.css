@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url() no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 62.5%;
+}
+
+.navbar {
+    background-color: #f0f0f0;
+    padding: 10px 20px; /* Added horizontal padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px; /* Define a fixed height for the navbar */
+}
+
+.logo-link {
+    display: flex;
+    align-items: center; /* Ensures the logo is vertically centered */
+    height: 100%; /* Make sure logo link fills the navbar height */
+}
+
+.navbar-logo {
+    max-height: 120%; /* Ensures the logo does not exceed the navbar height */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 20px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.nav-links a, .nav-links button {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+.nav-links button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.nav-links button:hover {
+    background-color: #0056b3;
+}
+
+.nav-links a:hover {
+    color: #0056b3;
+}
+
+.firstText{
+    color: white;
+    align-content: center;
+    height: 80vh;
+    background-image: url("Pictures/Donation.jpeg");
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.firstText::before{
+    content: '';
+    position: absolute;
+    background-color: #586e7a88;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.firstText-title{
+    font-size: 90px;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}  
+
+.column {
+    margin-top: 30%;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+  .aboutUs{
+    color: grey;
+    text-align: center;
+    background-image: url('/Users/robin/Desktop/Code the Change/Pictures/Care_Package.jpeg');
+    font-size: 20%;
+}
+
+.header-descrpiton{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: -1;
+}
+
+.header-descrpiton-column{
+    width: 25%;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+
+.header-descrpiton-column-text{
+    padding: 2rem;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #586e7a88;
+    z-index: 0;
+}
+
+.header-descrpiton-column-text>h3{
+    font-size: 45px;
+}
+
+.header-descrpiton-column-text>p{
+    font-size: 28px;
+}
+
+.descrpiton-column1{
+    background-image: url("/Users/robin/Desktop/Code the Change/Pictures/Care_Package.jpeg");
+}
+
+.descrpiton-column2{
+    background-image: url("/Users/robin/Desktop/Code the Change/Pictures/Excavater.jpeg");
+    overflow: hidden;
+}
+
+.descrpiton-column3{
+    background-image: url("/Users/robin/Desktop/Code the Change/Pictures/Supply_Load.jpeg");
+    overflow: hidden;
+}
+.descrpiton-column4{
+    background-image: url("/Users/robin/Desktop/Code the Change/Pictures/Donation.jpeg");
+    overflow: hidden;
+}
+
+.aboutUs{
+    color: white;
+    padding: 2rem 10rem;
+    background-color: #999;
+}
+
+.aboutUs > p{
+    font-size: 25px;
+}
+
+.aboutUs-title{
+    height: 30vh;
+    align-content: center;
+    text-align: center;
+    color: rgb(0, 132, 255);
+    font-size: 50px;
+}
+
+.footer {
+    background-color: #93B7F0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.footer-logo img {
+    height: 50px;
+    width: auto;
+    margin-right: 20px; /* Adjust if necessary */
+    border-radius: 50px;
+}
+
+.footer-columns {
+    display: flex;
+    flex: 1; /* Allows the columns container to fill the space */
+    justify-content: space-evenly; /* Ensures even spacing between and around columns */
+    align-items: center;
+}
+
+.footer-column {
+    flex: 1; /* Each column takes equal width */
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px; /* Adds padding inside each column for content spacing */
+    position: relative; /* Enables absolute positioning for pseudo-elements */
+}
+
+.footer-column:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ccc; /* Color of the vertical line */
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.footer-column ul li i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.2em;
+}
+
+.footer-links a, .footer-contact a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.footer-donate {
+    flex-shrink: 0; /* Prevents the donate button container from shrinking */
+}
+
+.footer-donate button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+}
+
+.footer-donate button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-columns {
+        flex-direction: column;
+        border-left: none;
+        border-right: none;
+    }
+    .footer-column::after {
+        display: none; /* Removes vertical lines on smaller screens */
+    }
+    .footer-logo, .footer-column, .footer-donate {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .footer-donate button {
+        width: 100%;
+        max-width: 200px;
+    }
+}
